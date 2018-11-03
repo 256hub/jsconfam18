@@ -1,0 +1,11 @@
+<ActionBar title="256 hub menu" class="action-bar">
+</ActionBar>
+
+<StackLayout class="page">
+    <ListView [items]="groups" class="list-group">
+        <ng-template let-item="item">
+            <Label [nsRouterLink]="['/group', item.id]" [text]="item.name | translate"
+                class="list-group-item"></Label>
+        </ng-template>
+    </ListView>
+</StackLayout>

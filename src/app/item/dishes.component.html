@@ -1,0 +1,14 @@
+<ActionBar title="Details" class="action-bar"></ActionBar>
+<StackLayout class="page">
+    <ListView [items]="dishes" class="list-group">
+        <ng-template let-item="item">
+            <FlexboxLayout flexDirection="column" class="page">
+                <FlexboxLayout class="m-15">
+                    <Label class="h2" [text]="item.name | translate"></Label>
+                </FlexboxLayout>
+                <Label class="h4" [text]="item.role"></Label>
+            </FlexboxLayout>
+        </ng-template>
+    </ListView>
+</StackLayout>
+
